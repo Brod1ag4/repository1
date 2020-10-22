@@ -1,0 +1,167 @@
+@font-face {
+  font-family: SF Mono;
+  src: url(../fonts/SF-Mono.ttf);
+}
+@font-face {
+  font-family: New York Small;
+  src: url(../fonts/NewYorkSmall-Medium.otf);
+}
+@font-face {
+  font-family: SF Pro Display;
+  src: url(../fonts/SF-Pro-Display-Medium.otf);
+}
+
+body {
+  margin-left: 0;
+}
+
+header {
+  margin-left: 0;
+  position: static;
+  width: 1440px;
+  height: 127px;
+}
+
+.nav {
+  /*font-family: New York Small;*/
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  position: absolute;
+  height: 34px;
+  left: 800px;
+  top: 40px;
+
+}
+
+.nav_elment {
+  margin-left: 30px;
+  display: inline;
+  font-family: New York Small;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 170%;
+}
+
+.nav_elment a {
+  text-decoration: none;
+
+}
+.nav_elment:hover {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 44px;
+}
+
+header img {
+  position: absolute;
+  width: 395.83px;
+  height: 37.53px;
+  left: 63.58px;
+  top: 52.54px;
+}
+
+.titleblock {
+  position: static;
+  width: 1440px;
+  height: 1030px;
+  left: 0px;
+  top: 0px;
+}
+.pic {
+  position: absolute;
+  width: 854px;
+  height: 533px;
+  left: 293px;
+  top: 210px;
+}
+
+h2 {
+  position: absolute;
+  width: 858px;
+  height: 162px;
+  left: 293px;
+  top: 787px;
+  font-family: New York Extra Large;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 100%;
+  text-align: center;
+}
+
+h2 + p {
+  position: absolute;
+  width: 592px;
+  height: 68px;
+  left: 424px;
+  top: 981px;
+  font-family: SF Mono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 170%;
+  /* or 34px */
+  text-align: center;
+  padding:20px;
+  border-bottom: 2px solid #000000;
+}
+
+.block {
+  position: static;
+  width: 1440px;
+  height: 1030px;
+  left: 0px;
+  top: 0px;
+}
+
+.block h2 {
+  width: 225px;
+  height: 53px;
+  left: 608px;
+  top: 1147px;
+  font-family: New York Extra Large;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  /* identical to box height */
+  text-align: center;
+}
+
+.piclist {
+  position: absolute;
+  width: 304px;
+  height: 176px;
+  left: 402px;
+  top: 1239px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.piclist2 {
+  list-style-type: none;
+  position: absolute;
+  width: 304px;
+  height: 176px;
+  left: 734px;
+  top: 1239px;
+  margin-top: 20px;
+}
+
+.piclist_el {
+  padding-bottom: 136px;
+}
+.piclist_el p {
+  position: absolute;
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 120%;
+  /* or 26px */
+  text-align: center;
+
+}

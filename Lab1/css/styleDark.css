@@ -1,0 +1,33 @@
+body {
+  background:#4C4C4C
+}
+
+header {
+  background:#4C4C4C;
+  box-shadow: 0px 1px 0px #9D9D9D;
+}
+
+.nav_elment a{
+  color:#9D9D9D;
+}
+
+.nav_elment:hover {
+  border-bottom: 2px solid #9D9D9D;
+  padding-bottom: 44px;
+}
+
+h2 {
+  color: #9D9D9D;
+}
+
+h2 + p {
+  color: #9D9D9D;
+  border-bottom: 2px solid #9D9D9D;
+}
+
+p {
+  color: #9D9D9D;
+}
+/*
+background: #4C4C4C;
+color:#9D9D9D;
