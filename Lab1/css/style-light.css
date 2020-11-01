@@ -1,26 +1,26 @@
 body {
-  background:#E5E5E5;
+  background: #FFFFFF;
 }
 
 header {
-  background:#E5E5E5;
+  background: #FFFFFF;
   box-shadow: 0px 1px 0px #000000;
 }
 
-.nav_elment a{
+.nav_item a{
   color:#000000;
 }
 
-.nav_elment:hover {
+.nav_item:hover {
   border-bottom: 2px solid #000000;
   padding-bottom: 44px;
 }
 
-h2 {
+.foreword {
   color: #000000;
 }
 
-h2 + p {
+.foreword + p {
   color: #000000;
   border-bottom: 2px solid #000000;
 }
