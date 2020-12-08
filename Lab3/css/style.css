@@ -34,12 +34,12 @@ body {
 /* identical to box height */
 }
 
-.signbox_item {
+.signbox__item {
   margin-left: 30px;
   display: inline;
 }
 
-.SignUp {
+.signUp {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -53,7 +53,7 @@ body {
   color: #F53855;
 }
 
-.SignUp:hover {
+.signUp:hover {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -66,7 +66,7 @@ body {
   background-color: #F53855;
   color: white;
 }
-.SignIn {
+.signIn {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -86,11 +86,11 @@ body {
   line-height: 19px;
 }
 
-.nav_item {
+.nav__item {
   margin-left: 30px;
   display: inline;
 }
-.nav_item a {
+.nav__item-link {
   color: #4F5665;
   text-decoration: none;
 }
@@ -110,7 +110,7 @@ body {
   color: #0B132A;
 }
 
-.tagline + p {
+.message__text {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -119,7 +119,7 @@ body {
   color: #4F5665;
 }
 
-.StartBtn {
+.startBtn {
   margin-top: 50px;
   font-family: Rubik;
   font-style: normal;
@@ -141,36 +141,37 @@ body {
   height: 120px;
 }
 
-.info div {
+.info__block {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 80%;
   flex-grow: 1;
+  border-right: 2px solid #EEEFF2;
 }
 
-.info div p {
+.info__block:last-child {
+  border-right: none;
+}
+.info__block__text {
   margin-left: 20px;
-  margin-bottom: 30px;
   font-family: Rubik;
   font-style: normal;
   line-height: 30px;
   color: #4F5665;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.tagline p strong {
+.info__block__text__header {
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
   color: #0B132A;
 }
 
-.aboutloc {
-  border-left: 2px solid #EEEFF2;
-  border-right: 2px solid #EEEFF2;
-  flex-grow: 2;
-}
 
 .decision {
   margin-bottom: 0;
@@ -183,7 +184,7 @@ body {
   color: #0B132A;
 }
 
-.decision + p {
+.offering_description {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -199,13 +200,12 @@ body {
 
 .service {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
-.service div {
+.plan {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   background: #FFFFFF;
   border: 2px solid #DDDDDD;
   box-sizing: border-box;
@@ -213,17 +213,14 @@ body {
   padding: 76px 50px;
 }
 
-.service div:hover {
+.plan:hover {
   border-color: #F53838;
 }
 
-.service .stndplan {
-  margin: 0 50px;
-}
-.service div img {
+.plan__image {
   align-self: center;
 }
-.service ul {
+.plan__advantages {
   font-family: RubikLight;
   font-style: normal;
   font-weight: normal;
@@ -233,7 +230,7 @@ body {
   list-style: url(../img/check.png);
   flex-grow: 1;
 }
-.service li {
+.plan__advantages__item {
   padding-left: 25px;
   padding-bottom: 10px;
 }
@@ -248,7 +245,7 @@ body {
   color: #0B132A;
 }
 
-.plans {
+.plan__name {
   text-align: center;
   font-family: Rubik;
   font-style: normal;
@@ -289,11 +286,11 @@ body {
   flex-grow: 1.5;
 }
 
-.copyright img {
+.copyright__logo {
   align-self: flex-start;
 }
 
-.copyright p {
+.copyright__description {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -307,7 +304,7 @@ body {
   justify-content: flex-start;
   margin-right: 10px;
 }
-.socmed + span {
+.copyright__text {
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
@@ -322,12 +319,12 @@ body {
   flex-grow: 1;
 }
 
-.links-container {
+.links__container {
   display: flex;
   flex-direction: column;
 }
 
-.links-container span {
+.links__container__element {
   font-family: Rubik;
   font-style: normal;
   font-weight: 500;
@@ -336,7 +333,7 @@ body {
   color: #0B132A;
 }
 
-.links-container a {
+.links__container-link {
   text-decoration: none;
   font-family: Rubik;
   font-style: normal;
