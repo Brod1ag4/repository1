@@ -1,0 +1,32 @@
+body {
+  background-color: #7B68EE;
+}
+.calc-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textbox {
+  width: 400px;
+  height: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.button {
+  cursor: pointer;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  outline: none;
+}
+
+
+.button:hover {
+  transition-duration: 0.5s;
+  background-color: #D3D3D3;
+  color: #111111;
+}
