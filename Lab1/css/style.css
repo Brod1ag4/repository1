@@ -35,7 +35,7 @@ header {
 
 }
 
-.nav_item {
+.nav__item {
   margin-left: 30px;
   display: inline;
   font-family: New York Small;
@@ -45,16 +45,15 @@ header {
   line-height: 170%;
 }
 
-.nav_item a {
+.nav__item .nav__item-link {
   text-decoration: none;
-
 }
-.nav_item:hover {
+.nav__item:hover {
   border-bottom: 2px solid #000000;
   padding-bottom: 44px;
 }
 
-header img {
+.logo {
   position: absolute;
   width: 395.83px;
   height: 37.53px;
@@ -93,7 +92,7 @@ header img {
 }
 
 
-.foreword + p {
+.foreword + .title-block__text {
   position: absolute;
   width: 592px;
   height: 68px;
@@ -118,7 +117,7 @@ header img {
   top: 0px;
 }
 
-.block h2 {
+.block .foreword {
   width: 225px;
   height: 53px;
   left: 608px;
@@ -153,10 +152,10 @@ header img {
   margin-top: 20px;
 }
 
-.articles-item {
+.articles__item {
   padding-bottom: 136px;
 }
-.articles-item p {
+.articles__item .articles__item-text {
   position: absolute;
   font-family: SF Pro Display;
   font-style: normal;
