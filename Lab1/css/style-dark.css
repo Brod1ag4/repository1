@@ -7,11 +7,11 @@ header {
   box-shadow: 0px 1px 0px #9D9D9D;
 }
 
-.nav_item a{
+.nav__item .nav__item-link {
   color:#9D9D9D;
 }
 
-.nav_item:hover {
+.nav__item:hover {
   border-bottom: 2px solid #9D9D9D;
   padding-bottom: 44px;
 }
@@ -20,7 +20,7 @@ header {
   color: #9D9D9D;
 }
 
-.foreword + p {
+.foreword + .title-block__text {
   color: #9D9D9D;
   border-bottom: 2px solid #9D9D9D;
 }
