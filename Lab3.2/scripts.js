@@ -21,64 +21,39 @@ window.onload = function () {
   }
 
   // удаление из списка
-  function deleteElements() {
-    if (document.querySelector(".store-select option:checked") !== null) {
-      var selectedOption = document.querySelector(
-        ".store-select option:checked"
-      );
-      storeElements.splice(storeElements.indexOf(selectedOption.innerText), 1);
-    } else {
-      var selectedOption = document.querySelector(
-        ".listing-select option:checked"
-      );
-      listingElements.splice(
-        listingElements.indexOf(selectedOption.innerText),
-        1
-      );
+  function deleteElement(element, mass) {
+    var elementPosition = mass.indexOf(element);
+    if (elementPosition !== -1) {
+      var list = mass.splice(elementPosition, 1);
+      return list;
     }
   }
 
   //добавление новго элемента
-  function newElement() {
+  function addnewElement() {
     var newelement = prompt("Введите название фрукта");
     listingElements.push(newelement);
   }
 
-  function renameElement() {
-    var newelement = prompt("Введите название фрукта");
-
-    if (document.querySelector(".store-select option:checked") !== null) {
-      var selectedOption = document.querySelector(
-        ".store-select option:checked"
-      );
-      storeElements.splice(
-        storeElements.indexOf(selectedOption.innerText),
-        1,
-        newelement
-      );
-    } else {
-      var selectedOption = document.querySelector(
-        ".listing-select option:checked"
-      );
-      listingElements.splice(
-        listingElements.indexOf(selectedOption.innerText),
-        1,
-        newelement
-      );
+  function renameElement(oldName, mass, newName) {
+    var elementPosition = mass.indexOf(oldName);
+    if (elementPosition !== -1) {
+      var list = mass.splice(elementPosition, 1, newName);
+      return list;
     }
   }
 
   function sort() {
-      if (listingElements[0] > listingElements[listingElements.length - 1]) {
-        listingElements = listingElements.sort();
-        storeElements = storeElements.sort();
-      } else {
-        listingElements = listingElements.sort();
-        storeElements = storeElements.sort();
-        listingElements = listingElements.reverse();
-        storeElements = storeElements.reverse();
-      }
+    if (listingElements[0] > listingElements[listingElements.length - 1]) {
+      listingElements = listingElements.sort();
+      storeElements = storeElements.sort();
+    } else {
+      listingElements = listingElements.sort();
+      storeElements = storeElements.sort();
+      listingElements = listingElements.reverse();
+      storeElements = storeElements.reverse();
     }
+  }
 
   // updateUI берет данные из массивов и занимается вставкой
   function updateUI() {
@@ -123,17 +98,43 @@ window.onload = function () {
   };
 
   deleteButton.onclick = function () {
-    deleteElements();
+    var selectedOption = document.querySelector(".store-select option:checked");
+    addToListingElements(selectedOption.innerText);
+    updateUI();
+  };
+  deleteButton.onclick = function () {
+    if (document.querySelector(".store-select option:checked") !== null) {
+      var selectedOption = document.querySelector(
+        ".store-select option:checked"
+      );
+      deleteElement(selectedOption.innerText, storeElements);
+    } else {
+      var selectedOption = document.querySelector(
+        ".listing-select option:checked"
+      );
+      deleteElement(selectedOption.innerText, listingElements);
+    }
     updateUI();
   };
 
   newElementButton.onclick = function () {
-    newElement();
+    addnewElement();
     updateUI();
   };
 
   renameButton.onclick = function () {
-    renameElement();
+    let newName = prompt("Enter new name");
+    if (document.querySelector(".store-select option:checked") !== null) {
+      var selectedOption = document.querySelector(
+        ".store-select option:checked"
+      );
+      rename(selectedOption.innerText, storeElements, newName);
+    } else {
+      var selectedOption = document.querySelector(
+        ".listing-select option:checked"
+      );
+      rename(selectedOption.innerText, listingElements, newName);
+    }
     updateUI();
   };
 
