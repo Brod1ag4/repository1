@@ -179,31 +179,3 @@ function validator(value) {
     },
   });
 }
-
-//проверки 1 части
-console.log(register("asd@gmail.com", "A1dfgh"));
-console.log(signIn("asd@gmail.com", "A1dfgh"));
-console.log(resetPassword("asd@gmail.com", "A1dfgh", "Df4das"));
-signOut();
-console.log(isAuth());
-console.log(authUserData);
-
-//проверки валидатора
-
-console.log("\nisArray isString isNumber \n");
-console.log(validator("1").isArray().validate()); // false
-console.log(validator("1").isString().validate()); // true
-console.log(validator("1").isNumber().validate()); // false
-
-console.log("\nMin Max \n");
-console.log(validator(10).isNumber().min(10).validate()); // true
-console.log(validator(10).isNumber().min(4).max(9).validate()); // false
-
-console.log("\nisArray equal \n");
-console.log(validator([]).isArray().equal([1, 2, 3]).validate()); // false
-console.log(validator([1, 2, 3]).isArray().equal([1, 2, 3]).validate()); // true
-
-console.log("\nisString isEmail isDate \n");
-console.log(validator("user@m").isString().isEmail().validate()); // false
-console.log(validator("user@mail.ru").isString().isEmail().validate()); // true
-console.log(validator("25.12.1993").isDate().validate()); // true
