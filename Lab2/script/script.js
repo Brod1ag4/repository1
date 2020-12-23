@@ -71,7 +71,7 @@ function isAuth() {
 
 function validator(value) {
   let test = true; //поле для хранения вазвращаевомого булевого значения
-  return (validation = {
+  return {
     test_value: value,
     isString: function () {
       if (
@@ -177,5 +177,5 @@ function validator(value) {
     validate() {
       return this.test;
     },
-  });
+  };
 }
