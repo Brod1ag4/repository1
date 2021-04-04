@@ -1,5 +1,4 @@
-function Time()
-{
+function Time() {
   var time=new Date();
   var hour = time.getHours();
   var min = time.getMinutes();
@@ -7,14 +6,13 @@ function Time()
   hour = checkTime(hour);
   min = checkTime(min);
   sec = checkTime(sec);
-  document.getElementById('clock').innerHTML=hour+":"+min+":"+sec;
+  document.getElementById('clock').innerHTML = hour + ":" + min+ ":" +sec;
   setTimeout('Time()',500);
 }
-function checkTime(i)
-{
-  if (i<10)
+function checkTime(i) {
+  if (i < 10)
   {
-    i="0" + i;
+    i = "0" + i;
   }
   return i;
 }
