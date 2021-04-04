@@ -1,8 +1,8 @@
 function Time() {
-  var time=new Date();
-  var hour = time.getHours();
-  var min = time.getMinutes();
-  var sec = time.getSeconds();
+  let time=new Date();
+  let hour = time.getHours();
+  let min = time.getMinutes();
+  let sec = time.getSeconds();
   hour = checkTime(hour);
   min = checkTime(min);
   sec = checkTime(sec);
